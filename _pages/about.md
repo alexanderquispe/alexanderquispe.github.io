@@ -13,8 +13,8 @@ I received my B.S. in Economics at PUCP and my M.S in Quantitative Economics at 
 
 ## Current Projects about CI & ML
 
-* [Dive into Causal Machine Learning](https://d2cml-ai.github.io/d2cml.ai/)
-* Inference on Causal and Structural Parameters using ML and AI with [R](https://d2cml-ai.github.io/14.388_r), [Python](https://d2cml-ai.github.io/14.388_py), [Julia](https://d2cml-ai.github.io/14.388_jl) used in the course 14.38 at MIT.
-* Machine Learning and Causal Inference using [Python](https://d2cml-ai.github.io/mgtecon634_py/md/intro.html), used in the course MGTECON-634 at Stanford.
-* [HDMJL.jl](https://github.com/d2cml-ai/HDMjl.jl) - Julia Package of methods for estimation in high-dimensional models based on Chernozhukov et al. (2016)
-* [Sensemakr.jl](https://github.com/d2cml-ai/Sensemakr.jl) - Julia package for sensitivity analysis tools based on Cinelli et al. (2020)
+1. [Dive into Causal Machine Learning](https://d2cml-ai.github.io/d2cml.ai/) - This website represents my attempt to make the intersection of CI & ML approachable, teaching the concepts and the code in three different programming languages (R, Python, and Julia). 
+2. Inference on Causal and Structural Parameters using ML and AI with [R](https://d2cml-ai.github.io/14.388_r), [Python](https://d2cml-ai.github.io/14.388_py), [Julia](https://d2cml-ai.github.io/14.388_jl) used in the course 14.38 at MIT.
+3. Machine Learning and Causal Inference using [Python](https://d2cml-ai.github.io/mgtecon634_py/md/intro.html), used in the course MGTECON-634 at Stanford.
+4. [HDMJL.jl](https://github.com/d2cml-ai/HDMjl.jl) - Julia Package of methods for estimation in high-dimensional models based on Chernozhukov et al. (2016)
+5. [Sensemakr.jl](https://github.com/d2cml-ai/Sensemakr.jl) - Julia package for sensitivity analysis tools based on Cinelli et al. (2020)
