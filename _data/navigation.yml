@@ -8,16 +8,16 @@ main:
     url: /publications/
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/ 
+
+  - title: "D2CML"
+    url: https://d2cml-ai.github.io/d2cml.ai/   
     
   - title: "Scrapers"
     url: /portfolio/
-            
-  - title: "Causal Inference and ML Bookdown"
-    url: /CIML/
-    
+          
   - title: "Alumni"
     url: /alumni/
 
-  - title: "Alumni 2"
+  - title: "Alumni_2"
     url: /alumni_2/
