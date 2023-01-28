@@ -1,58 +1,277 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/alumno.css" />
-    <!-- <link rel="stylesheet" href="css/pygment_trac.css" /> -->
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Quispe | Teaching</title>
+    <link rel="stylesheet" href="teach.css" />
+    <!-- <link rel="stylesheet" href="../css/ main.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/524ee0f7ae.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>Alexander Quispe | Homepage</title>
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Alexander Quispe</h1>
-        <p>MSc. Quantitative Economics</p>
-        <p>University of Munich.</p>
-        <img src="../img/alex_foto.jpg" alt="Profile Pic" />
-        <ul>
-          <li>
-            <a href="#" target="_blank"><strong>CV</strong></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><strong>Twitter</strong></a>
-          </li>
-          <li>
+    <main>
+      <div>
+        <p class="home"><a href="../index.html">Home</a></p>
+      </div>
+      <section class="bio">
+        <div class="top"></div>
+        <div class="sticky">
+          <h1>Alexander Quispe</h1>
+          <p>MSc. Quantitative Economics</p>
+          <p>University of Munich.</p>
+          <img src="../img/alex_foto.jpg" alt="Profile Pic" />
+          <ul>
+            <li>
+              <a
+                href="https://alexanderquispe.github.io/files/Alexander_Quispe_CV.pdf"
+                target="_blank"
+                ><strong><i class="fa-solid fa-file"></i> CV</strong></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/alexanderquispe" target="_blank"
+                ><strong
+                  ><i class="fa-brands fa-square-github"></i> GitHub</strong
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/alexander-quispe-37ab42173"
+                target="_blank"
+                ><strong
+                  ><i class="fa-brands fa-linkedin"></i> LinkedIn</strong
+                ></a
+              >
+            </li>
+            <!-- <li>
             <a href="#" target="_blank"><strong>LinkedIn</strong></a>
-          </li>
-          <!-- <li>
-              <a href="#" target="_blank"><strong>LinkedIn</strong></a>
-            </li> -->
-        </ul>
-        <br />
-        <br />
-      </header>
-      <section id="alumno">
-        <h2>About me</h2>
-        <p>
-          I am a Junior Researcher at the World Bank in the ID4D team and
-          Lecturer in the Department of Economics at Pontificia Universidad
-          Católica del Perú (PUCP). Currently, I collaborate with Professor
-          Victor Chernozhukov on the creation of Econometric Packages and
-          Tutorials about Causal Inference and Machine Learning (CI & ML).
-        </p>
-
-        <p>
-          I received my B.S. in Economics at PUCP and my M.S in Quantitative
-          Economics at the University of Munich. During my second year, I
-          visited the Laboratory for Innovation Science at Harvard (LISH). I
-          worked as RA at Yale, the Max Planck Institute for Innovation and
-          Competition (MPI) and MIT Sloan.
-        </p>
+          </li> -->
+          </ul>
+          <br />
+        </div>
       </section>
-      <script src="../javascripts/alumno.js"></script>
-    </div>
+      <section class="course">
+        <section class="name-course">
+          <h1>Machine Learning and Causal Inference Graduates</h1>
+          <hr />
+        </section>
+        <section>
+          <h2>Teaching Assistants</h2>
+          <hr />
+        </section>
+        <section id="teaching-assi" class="description"></section>
+        <section>
+          <h2>Students</h2>
+          <hr />
+        </section>
+        <section id="Students" class="description"></section>
+        <script>
+          const $stdnt = document.getElementById("Students");
+          const $assi = document.getElementById("teaching-assi");
+          const desc = (params) => {
+            const src = `../img/teaching1/${params.src}.jpg`;
+            const name = params.name;
+            const github = params.github;
+            const url = params.url;
+            // const
+            return `
+            <div class="container">
+              <img src=${src} class="image" />
+              <div class="overlay">
+                <h3>${name}</h3>
+                <p>
+                  Economics student
+                </p>                  
+                <span>
+                  <a href="${github}" target="_blank">
+                    <i class="icon fab fa-github"></i
+                  ></a>
+
+                  <a href="${url}" target="_blank">
+                    <i class="icon fas fa-link"></i
+                  ></a>
+                </span>
+              </div>
+            </div>
+          `;
+          };
+          const assistans = [
+            {
+              src: "eli",
+              name: "Elibeth Cirilo",
+              github: "https://github.com/ecirilomendoza",
+              url: "https://ecirilomendoza.github.io/",
+            },
+            {
+              src: "roberto",
+              name: "Roberto Mendoza",
+              github: "https://github.com/Robertopucp",
+              url: "https://robertopucp.github.io/robert.github.io/",
+            },
+            {
+              src: "claudia",
+              name: "Claudia Vivas Alejandro",
+              github: "https://github.com/claudiavivas",
+              url: "https://claudiavivas.github.io/",
+            },
+            {
+              src: "stephy",
+              name: "Stephy Riega Escalante",
+              github: "https://github.com/stephyriega",
+              url: "https://stephyriega.github.io/",
+            },
+            {
+              src: "jesus",
+              name: "Jesús Soto Enriquez",
+              github: "https://github.com/jesoto",
+              url: "https://jesoto.github.io/portafolio/",
+            },
+            {
+              src: "carlos",
+              name: "Carlos González Avila",
+              github: "https://github.com/carlosgonzalez26",
+              url: "https://carlosgonzalez26.github.io/",
+            },
+            {
+              src: "franco",
+              name: "Franco Caceres Vasquez",
+              github: "https://github.com/francocv6",
+              url: "https://francocv6.github.io/portafolio/",
+            },
+            {
+              src: "sandra",
+              name: "Sandra Martínez Gutiérrez",
+              github: "https://github.com/SandraMartinezGutierrez",
+              url: "https://sandramartinezgutierrez.github.io/",
+            },
+            {
+              src: "sonia",
+              name: "Sonia Asto Mercado",
+              github: "https://github.com/rosmeryasto",
+              url: "https://rosmeryasto.github.io/",
+            },
+            {
+              src: "gianfranco",
+              name: "Gianfranco Soria Alosilla",
+              github: "https://github.com/GianfrancoSoria",
+              url: "https://gianfrancosoria.github.io/",
+            },
+            {
+              src: "rodrigo",
+              name: "Rodrigo Silupú",
+              github: "https://github.com/rodrigosilupu",
+              url: "https://rodrigosilupu.github.io/",
+            },
+            {
+              src: "marcio",
+              name: "Marcio Tapia",
+              github: "https://github.com/Andre2021-est",
+              url: "https://andre2021-est.github.io/",
+            },
+            {
+              src: "aliro",
+              name: "Aliro Cabrera",
+              github: "https://github.com/manuautomatic",
+              url: "https://manuautomatic.github.io/",
+            },
+            {
+              src: "eljaer",
+              name: "Eljaer Eusebio",
+              github: "https://github.com/edfrance",
+              url: "https://edfrance.github.io/",
+            },
+            {
+              src: "alexanderpacheco",
+              name: "Alexander Pacheco",
+              github: "https://github.com/alexander-pacheco",
+              url: "https://alexander-pacheco.github.io/",
+            },
+            {
+              src: "erik",
+              name: "Erik Morales López",
+              github: "https://github.com/HaloReach2552",
+              url: "https://haloreach2552.github.io/Brando.fold.github.io/",
+            },
+            {
+              src: "diego",
+              name: "Diego Delgado",
+              github: "https://github.com/DiegoDelgadoD",
+              url: "https://diegodelgadod.github.io/",
+            },
+            {
+              src: "diegoalonso",
+              name: "Diego Alonso Gómez",
+              github: "https://github.com/Diego-Alonso-544",
+              url: "https://diego-alonso-544.github.io/",
+            },
+            {
+              src: "nicole",
+              name: "Nicole Linares Camus",
+              github: "https://github.com/hintecole?tab=repositories",
+              url: "https://hintecole.github.io/",
+            },
+            {
+              src: "katiuska2",
+              name: "Katiuska Olivera",
+              github: "https://github.com/KatiuskaOlivera",
+              url: "https://katiuskaolivera.github.io/",
+            },
+            {
+              src: "daniel",
+              name: "Daniel Carrillo",
+              github: "https://github.com/deecc",
+              url: "https://deecc.github.io/",
+            },
+            {
+              src: "rosemery",
+              name: "Rosemery Fernandez",
+              github: "https://github.com/RosemeryFernandez",
+              url: "https://rosemeryfernandez.github.io/",
+            },
+            {
+              src: "danieldela",
+              name: "Daniel de la Peña Brito",
+              github: "https://github.com/daniel-dpb",
+              url: "https://daniel-dpb.github.io/",
+            },
+            {
+              src: "gonzalo",
+              name: "Gonzalo Quiroz",
+              github: "https://github.com/GonzaloQuiroz",
+              url: "https://gonzaloquiroz.github.io/",
+            },
+            {
+              src: "andrea",
+              name: "Andrea Clavo",
+              github: "https://github.com/andreab0106?tab=repositories",
+              url: "https://andreab0106.github.io/",
+            },
+            {
+              src: "thais",
+              name: "M. Thais C. Bazán Burgos",
+              github: "https://github.com/thaisbazanb",
+              url: "https://thaisbazanb.github.io/",
+            },
+          ];
+
+          for (let i = 0; i < assistans.length; i++) {
+            const element = assistans[i];
+            if (i < 2) {
+              $assi.innerHTML += desc(element);
+            } else {
+              $stdnt.innerHTML += desc(element);
+            }
+          }
+        </script>
+      </section>
+      <hr />
+    </main>
   </body>
 </html>

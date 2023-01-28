@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Quispe | Teaching</title>
+    <link rel="stylesheet" href="teach.css" />
+    <!-- <link rel="stylesheet" href="../css/ main.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/524ee0f7ae.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+  </head>
+  <body>
+    <main>
+      <div>
+        <p class="home"><a href="../index.html">Home</a></p>
+      </div>
+      <section class="bio">
+        <div class="top"></div>
+        <div class="sticky">
+          <h1>Alexander Quispe</h1>
+          <p>MSc. Quantitative Economics</p>
+          <p>University of Munich.</p>
+          <img src="../img/alex_foto.jpg" alt="Profile Pic" />
+          <ul>
+            <li>
+              <a
+                href="https://alexanderquispe.github.io/files/Alexander_Quispe_CV.pdf"
+                target="_blank"
+                ><strong><i class="fa-solid fa-file"></i> CV</strong></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/alexanderquispe" target="_blank"
+                ><strong
+                  ><i class="fa-brands fa-square-github"></i> GitHub</strong
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/alexander-quispe-37ab42173"
+                target="_blank"
+                ><strong
+                  ><i class="fa-brands fa-linkedin"></i> LinkedIn</strong
+                ></a
+              >
+            </li>
+            <!-- <li>
+            <a href="#" target="_blank"><strong>LinkedIn</strong></a>
+          </li> -->
+          </ul>
+          <br />
+        </div>
+      </section>
+      <section class="course">
+        <section class="name-course">
+          <h1>Diplomado PUCP</h1>
+        </section>
+
+        <section>
+          <h2>Students</h2>
+          <hr />
+        </section>
+        <section id="Students" class="description"></section>
+        <script>
+          const $stdnt = document.getElementById("Students");
+          // const $assi = document.getElementById("teaching-assi");
+          const desc = (params) => {
+            const src = `../img/teaching2/${params.src}.jpg`;
+            const name = params.name;
+            const github = params.github;
+            const url = params.url;
+            const position = params.pos;
+            // const span =
+            return `
+            <div class="container">
+              <img src=${src} class="image" />
+              <div class="overlay small">
+                <h3>${name}</h3>
+                <p class="small">
+                  ${position}
+                </p >                  
+                <span>
+                  <a href="${github}" target="_blank">
+                    <i class="icon fab fa-github"></i
+                  ></a>
+
+                  <a href="${url}" target="_blank">
+                    <i class="icon fas fa-link"></i
+                  ></a>
+                </span>
+              </div>
+            </div>
+          `;
+          };
+          const assistans = [
+            {
+              pos: "BSc of Economics from the PUCP",
+              src: "valeria",
+              name: "Valeria Navarro",
+              github: "https://github.com/ValeriaNavarro26",
+              url: "https://valerianavarro26.netlify.app/",
+            },
+            {
+              pos: "BSc of Economics from the PUCP",
+              src: "adriana1",
+              name: "Adriana Mosqueira Carrión",
+              github: "https://github.com/AdrianaMosqueira",
+              url: "https://adrianamosqueira.github.io/about.html",
+            },
+            {
+              pos: "Economist from the UNMSM.",
+              src: "carlos",
+              name: "Carlos A. Zelada",
+              github: "https://github.com/czeladach/",
+              url: "https://czeladach.github.io/",
+            },
+            {
+              pos: "Senior Adquisition Strategy Analyst at Scotiabank Perú.",
+              src: "luciana",
+              name: "Luciana Figueroa",
+              github: "https://github.com/lucianafv27",
+              url: "https://lucianafv27.github.io/",
+            },
+            {
+              pos: "Systems Engineer - Information Systems Quality Analyst.",
+              src: "klary",
+              name: "Klary Lozano",
+              github: "https://github.com/klarylozanoruiz",
+              url: "https://klarylozanoruiz.github.io/website/",
+            },
+            {
+              pos: "RA Consultant at the University of Columbia and a Teacher at PUCP.",
+              src: "yoseph",
+              name: "Yoseph Ayala",
+              github: "https://github.com/Yoseph10",
+              url: "https://yosephayala.netlify.app/",
+            },
+            {
+              pos: "Graduated in Political Science from the PUCP (PUCP).",
+              src: "rosario",
+              name: "Rosario Ramos",
+              github: "https://github.com/RRamosc",
+              url: "https://rramosc.github.io/",
+            },
+            {
+              pos: "BSc in Political Science and Government from the PUCP.",
+              src: "chiara",
+              name: "Chiara Zamora",
+              github: "https://github.com/ChiaraZamoraM",
+              url: "https://chiarazamoram.github.io/chiarazamora.github.io/",
+            },
+            {
+              pos: "BSc in Economics from the PUCP",
+              src: "rodrigo",
+              name: "Rodrigo Grijalba",
+              github: "https://github.com/RodrigoGrijalba",
+              url: "https://rodrigogrijalba.github.io/",
+            },
+            {
+              pos: "Data Scientist at Credigob. Economist ",
+              src: "rodrigoalamo",
+              name: "Luis Rodrigo Alamo Ramos",
+              github: "https://github.com/Rodrigo9721",
+              url: "https://rodrigo9721.github.io/",
+            },
+            {
+              pos: "Economics | DS for Social Sciences and Public Management.",
+              src: "hans",
+              name: "Hans Isaí Aguirre Ccerare",
+              github: "https://github.com/hansaguirre1",
+              url: "https://hansaguirre1.github.io/HansAguirre/",
+            },
+            {
+              pos: "Master in Human Development. DS for Social Sciences and Public Management.",
+              src: "daniel",
+              name: "Daniel Soto",
+              github: "https://github.com/DanielSotoHurtado",
+              url: "https://danielsotohurtado.github.io/",
+            },
+            {
+              pos: "B.A. in Psychology, and currently work as a CX Metrics Specialist at RIMAC Seguros.",
+              src: "jesus",
+              name: "Jesus Gastañaduy",
+              github: "https://github.com/j-gastanaduy",
+              url: "https://j-gastanaduy.github.io/",
+            },
+            {
+              pos: "Graduated in Political and Government Sciences from the PUCP (PUCP).",
+              src: "claudia",
+              name: "Claudia Villena",
+              github: "https://github.com/ClaudiaVillena27",
+              url: "https://focused-fermat-9b9d69.netlify.app/",
+            },
+            {
+              pos: "MSc in Social Sciences Research Methods of Cardiff University - United Kingdom",
+              src: "juan",
+              name: "JUAN AZULA",
+              github: "https://github.com/azula89/",
+              url: "https://azula89.github.io/azulajuan/",
+            },
+            {
+              pos: "BA in Social Sciences - Economics, PUCP.",
+              src: "carlos2",
+              name: "Carlos Kong",
+              github: "https://github.com/cdkv",
+              url: "https://cdkv.github.io/",
+            },
+            {
+              pos: "BSc of Economics – UNMSM ",
+              src: "luzmila",
+              name: "Luzmila Lopez",
+              github: "https://github.com/lopezluzmila",
+              url: "https://lopezluzmila.github.io/",
+            },
+            {
+              pos: "Undergraduate student in Economics at the PUCP.",
+              src: "antonio",
+              name: "Antonio Ayala Laurel",
+              github: "https://github.com/antonio-ayala",
+              url: "https://antonio-ayala.github.io/",
+            },
+            {
+              pos: "BSc in Sociology from PUCP.",
+              src: "raysa",
+              name: "Raysa Díaz",
+              github: "https://github.com/raysamariana24",
+              url: "https://raysamariana24.netlify.app/",
+            },
+          ];
+
+          for (let i = 0; i < assistans.length; i++) {
+            const element = assistans[i];
+            $stdnt.innerHTML += desc(element);
+          }
+        </script>
+      </section>
+      <hr />
+    </main>
+  </body>
+</html>
