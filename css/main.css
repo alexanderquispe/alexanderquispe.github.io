@@ -14,13 +14,25 @@ header p {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   color: #222;
   margin: 0 0 20px;
   line-height: 1.1;
   padding-top: 10px;
   /* padding-bottom: 0px;  */
   margin-bottom: 10px;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h4 {
+  /* margin-bottom: 10px; */
+  padding: 10 0px;
 }
 
 h1 {
