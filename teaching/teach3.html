@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Quispe | Teaching</title>
+    <link rel="stylesheet" href="teach.css" />
+    <!-- <link rel="stylesheet" href="../css/ main.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/524ee0f7ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        width: 210px; /* Ajusta este valor según el ancho deseado */
+        height: 200px; /* Ajusta este valor según la altura deseada */
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+      }
+
+      .std_image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .overlay h3,
+      .overlay p {
+        color: white;
+        text-align: center;
+        margin: 5px 0;
+      }
+
+      .icon {
+        color: white;
+        font-size: 24px;
+        margin: 0 10px;
+      }
+
+      #Students {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+  </head>
+  <body>
+    <main>
+      <div>
+        <p class="home"><a href="../index.html">Home</a></p>
+      </div>
+      <section class="bio">
+        <div class="top"></div>
+        <div class="sticky">
+          <h1>Alexander Quispe</h1>
+          <p>MSc. Quantitative Economics</p>
+          <p>University of Munich.</p>
+          <img src="../img/alex_foto.jpg" alt="Profile Pic" />
+          <ul>
+            <li>
+              <a
+                href="https://alexanderquispe.github.io/files/Alexander_Quispe_CV.pdf"
+                target="_blank"
+                ><strong><i class="fa-solid fa-file"></i> CV</strong></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/alexanderquispe" target="_blank"
+                ><strong
+                  ><i class="fa-brands fa-square-github"></i> GitHub</strong
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/alexander-quispe-37ab42173"
+                target="_blank"
+                ><strong
+                  ><i class="fa-brands fa-linkedin"></i> LinkedIn</strong
+                ></a
+              >
+            </li>
+            <!-- <li>
+            <a href="#" target="_blank"><strong>LinkedIn</strong></a>
+          </li> -->
+          </ul>
+          <br />
+        </div>
+      </section>
+      <section class="course">
+        <section class="name-course">
+          <h1>Causal AI Course</h1>
+        </section>
+
+        <section>
+          <h2>Teaching Assistant</h2>
+          <hr />
+        </section>
+        <section id="TA" class="description"></section>
+        <script>
+          const $ta = document.getElementById("TA");
+          const ta_data = [
+            {
+              user_name: "Jhon K. Flores Rojas",
+              position: "Research Assistant",
+              img: "https://avatars.githubusercontent.com/u/48776907?v=4",
+              website: "https://jhonkevinfr.netlify.app/",
+              github: "https://github.com/tjhon",
+            },
+            {
+              user_name: "Rodrigo Grijalba",
+              position: "BSc in Economics from the PUCP",
+              img: "https://rodrigogrijalba.github.io/images/profile.png",
+              website: "https://rodrigogrijalba.github.io",
+              github: "https://github.com/RodrigoGrijalba",
+            },
+          ];
+
+          const tades = (params) => {
+            const src = params.img;
+            const name = params.user_name;
+            let git = "https://github.com/";
+            const github = params.github;
+            const url = params.website;
+            const position = params.position;
+
+            return `
+              <div class="container">
+                <img src=${src} class="std_image" alt = ${name}/>
+                <div class="overlay small">
+                  <h3>${name}</h3>
+                  <p class="small">
+                    ${position}
+                  </p >
+                  <span>
+                    <a href="${github}" target="_blank">
+                      <i class="icon fab fa-github"></i
+                    ></a>
+
+                    <a href="${url}" target="_blank">
+                      <i class="icon fas fa-link"></i
+                    ></a>
+                  </span>
+                </div>
+              </div>
+            `;
+          };
+          for (let i = 0; i < ta_data.length; i++) {
+            const element = ta_data[i];
+            $ta.innerHTML += tades(element);
+          }
+        </script>
+        <section>
+          <h2>Students</h2>
+          <hr />
+        </section>
+        <section id="Students" class="description"></section>
+        <script>
+          const $stdnt = document.getElementById("Students");
+          // const $assi = document.getElementById("teaching-assi");
+          const desc = (params) => {
+            const src = params.img;
+            const name = params.user_name;
+            let git = "https://github.com/";
+            const github = git + params.GitHub_User;
+            const url = params.Website;
+            const position = params.position;
+            // const span =
+            return `
+            <div class="container">
+              <img src=${src} class="std_image" alt =${name}/>
+              <div class="overlay small">
+                <h3>${name}</h3>
+                <p class="small">
+                  ${position}
+                </p >
+                <span>
+                  <a href="${github}" target="_blank">
+                    <i class="icon fab fa-github"></i
+                  ></a>
+
+                  <a href="${url}" target="_blank">
+                    <i class="icon fas fa-link"></i
+                  ></a>
+                </span>
+              </div>
+            </div>
+          `;
+          };
+          const data = [
+            {
+              user_name: "Yllu, Alvaro",
+              GitHub_User: "AAYlluS",
+              Website: "https://aayllus.github.io/",
+              position: "Undergraduate Economist",
+              img: "https://aayllus.github.io/assets/img/profile-img.jpg",
+            },
+            {
+              user_name: "HOYOS, Valeria",
+              GitHub_User: "valeriahoyosm",
+              Website: "https://valeriahoyosm.github.io/Valeria_HM_cv/",
+              position: "Research Assistant",
+              img: "https://valeriahoyosm.github.io/Valeria_HM_cv/assets/img/avatar.png",
+            },
+            {
+              user_name: "MAGUIÑA, JOSUE",
+              GitHub_User: "Edu01062",
+              Website: "https://edu01062.github.io/Josue-Maguina_CV/",
+              position: "Undergraduate Economist",
+              img: "https://edu01062.github.io/Josue-Maguina_CV/assets/img/profile-img.jpg",
+            },
+            {
+              user_name: "CUBAS, Maria",
+              GitHub_User: "pamelacubas",
+              Website: "https://pamelacubas.github.io/Portafolio/",
+              position: "Economist Student",
+              img: "https://pamelacubas.github.io/Portafolio/images/perfil1.png",
+            },
+            {
+              user_name: "MAMANI, Janice",
+              GitHub_User: "JaniceDMP",
+              Website: "https://janicedmp.github.io/Portafolio_cv/",
+              position: "Economist Student",
+              img: "https://janicedmp.github.io/Portafolio_cv/assets/img/janicemamani.jpg",
+            },
+            {
+              user_name: "VILLALBA, Matias",
+              GitHub_User: "mvillalbao",
+              Website: "https://mvillalbao.github.io",
+              position: "Research Assistant",
+              img: "https://mvillalbao.github.io/assets/img/prof_pic-480.webp",
+            },
+            {
+              user_name: "DUBE, Valerie",
+              GitHub_User: "vedube",
+              Website: "https://vedube.github.io",
+              position: "BSc in Economics",
+              img: "https://vedube.github.io/images/profile.png",
+            },
+            {
+              user_name: "GUERRERO, JUAN",
+              GitHub_User: "juanguerrerocu",
+              Website: "https://github.com/juanguerrerocu/web-site.git",
+              position: "Undergraduated student in economics",
+              img: "https://github.com/juanguerrerocu/web-site/blob/main/Laura/assets/img/me.jpg?raw=true",
+            },
+            {
+              user_name: "GARAY, Erzo",
+              GitHub_User: "ErzoF",
+              Website: "https://erzof.github.io/Presentacion/",
+              position: "Economist Student",
+              img: "https://erzof.github.io/Presentacion/assets/img/Phot.jpg",
+            },
+            {
+              user_name: "HORNA, Gerardo",
+              GitHub_User: "blacky1412",
+              Website: "https://blacky1412.github.io/Alejandro_Horna_CV/",
+              position: "Applied Economist",
+              img: "https://blacky1412.github.io/Alejandro_Horna_CV/assets/img/Foto.jpg",
+            },
+            {
+              user_name: "ACOSTA, Fernando",
+              GitHub_User: "FernandoAcosta2002",
+              Website: "https://fernandoacosta2002.github.io/CV/",
+              position: "Economist Student",
+              img: "https://fernandoacosta2002.github.io/CV/assets/img/profile-img.jpg",
+            },
+            {
+              user_name: "TRELLES, Alberto",
+              GitHub_User: "albertotrelles",
+              Website: "https://albertotrelles.github.io/",
+              position: "B.S. Economics Candidate",
+              img: "https://albertotrelles.github.io/assets/img/unnamed.jpg",
+            },
+            {
+              user_name: "BEDIA, Jeffry",
+              GitHub_User: "Jeffrybw",
+              Website: "https://jeffrybw.github.io/portafolio/",
+              position: "Economics Bachelor",
+              img: "https://jeffrybw.github.io/portafolio/assets/img/profile-img.jpg",
+            },
+            {
+              user_name: "Olarte, Angie",
+              GitHub_User: "AngieOlarteG",
+              Website: "https://angieolarteg.github.io/CV/",
+              position: "Student of Economics",
+              img: "https://angieolarteg.github.io/CV/assets/img/Angie.jpg",
+            },
+            {
+              user_name: "MARTEL, Veronika",
+              GitHub_User: "fernandaamartel",
+              Website: "https://fernandaamartel.github.io/resume_fm/",
+              position: "ECONOMICS STUDENT",
+              img: "https://raw.githubusercontent.com/fernandaamartel/resume_fm/main/assets/img/me-main.jpg",
+            },
+            {
+              user_name: "ALVARADO, FRANK",
+              GitHub_User: "frank07-10",
+              Website: "https://frank07-10.github.io/Portafolio/about.html",
+              position: "Economics student",
+              img: "https://frank07-10.github.io/Portafolio/assets/images/me1.jpg",
+            },
+            {
+              user_name: "ROMERO, ANDREA",
+              GitHub_User: "andrearomperez",
+              Website: "https://andrearomperez.github.io/portfolio/",
+              position: "Economics student",
+              img: "https://andrearomperez.github.io/portfolio/assets/img/andrea_2.jpg",
+            },
+            {
+              user_name: "TRUJILLO, NICOLAS",
+              GitHub_User: "NicTrujillo-meow",
+              Website: "https://nictrujillo-meow.github.io/",
+              position:
+                "Economics Student & Real State Financial Planning Intern.",
+              img: "https://nictrujillo-meow.github.io/assets/img/profile-img.jpg",
+            },
+            {
+              user_name: "ARIZOLA, Francisco",
+              GitHub_User: "FranciscoAri",
+              Website: "https://franciscoari.github.io/Francisco_Arizola_CV/",
+              position: "Economics undergraduate|",
+              img: "https://franciscoari.github.io/Francisco_Arizola_CV/assets/img/Foto_perfil_FA.jpg",
+            },
+          ];
+
+          for (let i = 0; i < data.length; i++) {
+            const element = data[i];
+            $stdnt.innerHTML += desc(element);
+          }
+        </script>
+      </section>
+      <hr />
+    </main>
+  </body>
+</html>
