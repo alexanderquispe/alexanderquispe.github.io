@@ -33,10 +33,12 @@ print(df.groupby("d")["y"].mean().diff().iloc[-1])
 
 Put images in `img/blog/` and reference them like this:
 
+```html
 <figure>
-  <img src="/img/papers/language-frontier.jpg" alt="Event study of languages per month">
-  <figcaption>Figure 1: Languages used per month around Claude Code adoption.</figcaption>
+  <img src="/img/blog/my-figure.png" alt="Short description of the figure">
+  <figcaption>Figure 1: What the reader should take away.</figcaption>
 </figure>
+```
 
 ## Turning comments off
 

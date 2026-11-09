@@ -7,7 +7,6 @@
   --rule: #e4e1da;
   --link: #1d4f91;
   --link-hover: #0f2f5c;
-  --thumb-bg: #ffffff;
   --code-bg: #f4f2ed;
   --serif: "EB Garamond", Garamond, "Times New Roman", serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -22,7 +21,6 @@
     --rule: #2f3136;
     --link: #92b6f0;
     --link-hover: #c3d6f7;
-    --thumb-bg: #f3f1ec;
     --code-bg: #212328;
     color-scheme: dark;
   }
@@ -186,47 +184,23 @@ h3 {
 /* ---------- papers ---------- */
 
 .paper {
-  display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 24px;
-  align-items: start;
-  margin: 0 0 30px;
-}
-
-.thumb {
-  display: block;
-  background: var(--thumb-bg);
-  border: 1px solid var(--rule);
-  border-radius: 6px;
-  padding: 6px;
-}
-
-.thumb img {
-  display: block;
-  width: 100%;
-  height: auto;
+  margin: 0 0 24px;
 }
 
 .paper-title {
   font-weight: 600;
   line-height: 1.3;
-  display: inline-block;
-  margin-bottom: 2px;
 }
 
-.authors,
-.venue,
-.paper-links {
+.authors {
   font-size: 18px;
-}
-
-.venue {
-  color: var(--muted);
+  margin-top: 2px;
 }
 
 .summary {
-  margin: 6px 0 0;
+  margin: 4px 0 0;
   font-size: 18.5px;
+  color: var(--muted);
 }
 
 .plain-list {
@@ -418,15 +392,6 @@ mjx-container[display="true"] {
     order: -1;
     width: 160px;
     height: 160px;
-  }
-
-  .paper {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .thumb {
-    max-width: 340px;
   }
 
   .news li {
