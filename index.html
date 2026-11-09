@@ -1,7 +1,9 @@
 ---
 layout: default
+wide: true
 ---
 <section class="intro">
+  <img class="portrait" src="{{ '/img/alex_foto.jpg' | relative_url }}" alt="Photo of Alexander Quispe" width="200" height="200" />
   <div class="bio">
     <p>
       Hi! I'm a Ph.D. student in Computing and Mathematical Sciences at
@@ -21,175 +23,165 @@ layout: default
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
     </p>
   </div>
-  <img class="portrait" src="{{ '/img/alex_foto.jpg' | relative_url }}" alt="Photo of Alexander Quispe" width="220" height="220" />
 </section>
 
-<section id="news">
-  <h2>News</h2>
-  <ul class="news">
-    <li>
-      <span class="date">Oct 2026</span>
-      <span>Presented a poster on <a href="#language-frontier">Agentic Delegation and the Language Frontier</a>
-      at <a href="https://hai.stanford.edu/events/empirical-methods-in-the-age-of-ai">Empirical Methods in the Age of AI</a>, Stanford.</span>
-    </li>
-    <li>
-      <span class="date">Jul 2026</span>
-      <span>Presented <a href="#language-frontier">Agentic Delegation and the Language Frontier</a> at the
-      <a href="https://aiinstitute.hbs.edu/events/open-and-user-innovation-conference-2026/">Open and User Innovation Conference 2026</a>, Harvard Business School.</span>
-    </li>
-    <li>
-      <span class="date">Jul 2026</span>
-      <span>Selected for Anthropic's Claude for Open Source Program.</span>
-    </li>
-    <li>
-      <span class="date">Jul 2026</span>
-      <span>Three new drafts on agentic AI and software work: <a href="#renting-intelligence">Renting Intelligence</a>,
-      <a href="#industry-composition">Industry Composition</a>, and
-      <a href="#agentic-automation">A Unified Model of Agentic Coding Automation</a>.</span>
-    </li>
-    <li>
-      <span class="date">May 2026</span>
-      <span><a href="https://arxiv.org/abs/2605.25438">Agentic Delegation and the Language Frontier of Software Developers</a> is on arXiv.</span>
-    </li>
-    <li>
-      <span class="date">Sep 2025</span>
-      <span>Started my Ph.D. in Computing and Mathematical Sciences at Caltech.</span>
-    </li>
-  </ul>
-</section>
+<div class="columns">
+  <!-- Column 1: research -->
+  <section class="col" id="research">
+    <h2>Working Papers</h2>
+    <ol class="papers">
+      <li id="language-frontier">
+        <a class="paper-title" href="https://arxiv.org/abs/2605.25438">Agentic Delegation and the Language Frontier of Software Developers: A Model and Evidence from Claude Code on GitHub</a>
+        <div class="meta">(with Kevin Xu) &middot; 2026 &middot; <span class="links">[<a href="https://arxiv.org/abs/2605.25438">arXiv</a>]</span></div>
+        <p class="summary">When developers adopt Claude Code, the set of programming languages they work in roughly triples, and first uses of unfamiliar languages concentrate among narrow specialists.</p>
+      </li>
+      <li id="industry-composition">
+        <a class="paper-title" href="{{ '/files/quispe_xu_industry_composition_2026.pdf' | relative_url }}">Agentic AI and the Industry Composition of Developer Work</a>
+        <div class="meta">(with Kevin Xu) &middot; 2026 &middot; <span class="links">[<a href="{{ '/files/quispe_xu_industry_composition_2026.pdf' | relative_url }}">draft</a>]</span></div>
+        <p class="summary">Around first Claude Code use, developers' public work spreads into new industries: monthly distinct sectors nearly triple, and the cumulative sectoral footprint stays about 50% higher.</p>
+      </li>
+      <li id="renting-intelligence">
+        <a class="paper-title" href="{{ '/files/quispe_xu_renting_intelligence_2026.pdf' | relative_url }}">Renting Intelligence: Student Responses to an Exogenous Downgrade in AI Model Quality</a>
+        <div class="meta">(with Kevin Xu) &middot; 2026 &middot; <span class="links">[<a href="{{ '/files/quispe_xu_renting_intelligence_2026.pdf' | relative_url }}">draft</a>]</span></div>
+        <p class="summary">When GitHub moved students from Copilot Pro to a plan without premium models, their AI-assisted commits fell by roughly 83% of the pre-period mean relative to matched controls.</p>
+      </li>
+      <li id="agentic-automation">
+        <a class="paper-title" href="{{ '/files/quispe_agentic_automation_stages_2026.pdf' | relative_url }}">A Unified Economic Model of Agentic Coding Automation</a>
+        <div class="meta">2026 &middot; <span class="links">[<a href="{{ '/files/quispe_agentic_automation_stages_2026.pdf' | relative_url }}">draft</a>]</span></div>
+        <p class="summary">How many coding agents can an organization run? The tightest of verification, isolation, and demand constraints sets the scale, and the practitioners' five maturity stages correspond to which one binds.</p>
+      </li>
+      <li id="chatgpt-github">
+        <a class="paper-title" href="https://arxiv.org/abs/2406.11046">Impact of the Availability of ChatGPT on Software Development: A Synthetic Difference in Differences Estimation using GitHub Data</a>
+        <div class="meta">(with Rodrigo Grijalba) &middot; 2023 &middot; <span class="links">[<a href="https://arxiv.org/pdf/2406.11046">arXiv</a>]</span></div>
+        <p class="summary">Using government bans of ChatGPT as natural experiments, we find that access raised git pushes, repositories, and developers per capita on GitHub.</p>
+      </li>
+    </ol>
 
-<section id="research">
-  <h2>Research</h2>
-  <h3>Working papers</h3>
+    <h2>Earlier Work</h2>
+    <ol class="papers" start="6">
+      <li>
+        <span class="paper-title">Can Market Competition Reduce Public Sector Corruption?</span>
+        <div class="meta">(with Muhammad Haseeb, Amen Jalal &amp; Kate Vyborny) &middot; 2023 &middot; <span class="muted">draft on request</span></div>
+      </li>
+      <li>
+        <a class="paper-title" href="{{ '/files/hdm.pdf' | relative_url }}">High Dimensional Metrics in Julia</a>
+        <div class="meta">(with Victor Chernozhukov, Christian Hansen &amp; Martin Spindler) &middot; 2022 &middot; <span class="links">[<a href="{{ '/files/hdm.pdf' | relative_url }}">pdf</a>]</span></div>
+      </li>
+      <li>
+        <a class="paper-title" href="{{ '/files/Alexander_Quispe_Thesis.pdf' | relative_url }}">Fertility and Education Patterns Across Different Phases of Development</a>
+        <div class="meta">2020 &middot; <span class="links">[<a href="{{ '/files/Alexander_Quispe_Thesis.pdf' | relative_url }}">pdf</a>]</span></div>
+      </li>
+    </ol>
+  </section>
 
-  <div class="paper" id="language-frontier">
-    <a class="paper-title" href="https://arxiv.org/abs/2605.25438">Agentic Delegation and the Language Frontier of Software Developers: A Model and Evidence from Claude Code on GitHub</a>
-    <div class="authors"><strong>Alexander Quispe</strong>, Kevin Xu &middot; 2026 &middot; <a href="https://arxiv.org/abs/2605.25438">arXiv</a></div>
-    <p class="summary">When developers adopt Claude Code, the set of programming languages they work in roughly triples, and first uses of unfamiliar languages concentrate among narrow specialists.</p>
-  </div>
+  <!-- Column 2: software -->
+  <section class="col" id="software">
+    <h2>Software</h2>
+    <h3>Causal ML packages</h3>
+    <ul class="items">
+      <li><a href="https://github.com/d2cml-ai/csdid">csdid</a>: average treatment effect parameters in Difference-in-Differences, including doubly robust estimation.</li>
+      <li><a href="https://github.com/d2cml-ai/DRDIDpy">DRDIDpy</a>: estimators for the ATT in DiD when parallel trends hold after conditioning on pre-treatment covariates.</li>
+      <li><a href="https://github.com/CausalML/TreatmentEffectRisk.py">TreatmentEffectRisk</a>: bounds and inference for treatment effect risk.</li>
+      <li><a href="https://github.com/d2cml-ai/synthdid.py/">synthdid.py</a>, <a href="https://github.com/d2cml-ai/Synthdid.jl">synthdid.jl</a>: Python and Julia implementations of Synthetic Difference-in-Differences (Arkhangelsky et al., 2021).</li>
+      <li><a href="https://github.com/d2cml-ai/HDMjl.jl">HDMjl</a>: estimation methods for high-dimensional models in Julia (Chernozhukov et al., 2016).</li>
+      <li><a href="https://github.com/d2cml-ai/Sensemakr.jl">Sensemakr.jl</a>: sensitivity analysis tools in Julia (Cinelli et al., 2020).</li>
+    </ul>
 
-  <div class="paper" id="industry-composition">
-    <a class="paper-title" href="{{ '/files/quispe_xu_industry_composition_2026.pdf' | relative_url }}">Agentic AI and the Industry Composition of Developer Work</a>
-    <div class="authors"><strong>Alexander Quispe</strong>, Kevin Xu &middot; 2026 &middot; <a href="{{ '/files/quispe_xu_industry_composition_2026.pdf' | relative_url }}">draft</a></div>
-    <p class="summary">Around first Claude Code use, developers' public work spreads into new industries: monthly distinct sectors nearly triple, and the cumulative sectoral footprint stays about 50% higher.</p>
-  </div>
+    <h3>Books and teaching resources</h3>
+    <ul class="items">
+      <li>
+        <strong>Inference on Causal and Structural Parameters using ML and AI</strong>, used in course 14.388 at MIT
+        <span class="links">[<a href="https://d2cml-ai.github.io/14.388_r">R</a>][<a href="https://d2cml-ai.github.io/14.388_py">Python</a>][<a href="https://d2cml-ai.github.io/14.388_jl">Julia</a>]</span>
+      </li>
+      <li>
+        <strong>Machine Learning and Causal Inference</strong>, used in course MGTECON 634 at Stanford
+        <span class="links">[<a href="https://d2cml-ai.github.io/mgtecon634_r">R</a>][<a href="https://d2cml-ai.github.io/mgtecon634_py/">Python</a>]</span>
+      </li>
+    </ul>
 
-  <div class="paper" id="renting-intelligence">
-    <a class="paper-title" href="{{ '/files/quispe_xu_renting_intelligence_2026.pdf' | relative_url }}">Renting Intelligence: Student Responses to an Exogenous Downgrade in AI Model Quality</a>
-    <div class="authors"><strong>Alexander Quispe</strong>, Kevin Xu &middot; 2026 &middot; <a href="{{ '/files/quispe_xu_renting_intelligence_2026.pdf' | relative_url }}">draft</a></div>
-    <p class="summary">When GitHub moved students from Copilot Pro to a plan without premium models, their AI-assisted commits fell by roughly 83% of the pre-period mean relative to matched controls.</p>
-  </div>
+    <h3>AI projects</h3>
+    <ul class="items">
+      <li>
+        <a href="https://github.com/RodrigoGrijalba/vog-chatbot">ILLA</a>: an AI assistant that helps identify potential obstetric and gynecological violence
+        <span class="links">[<a href="https://elcomercio.pe/ecdata/cesareas-en-peru-comercio-creo-a-illa-una-herramienta-y-asistente-virtual-entrenada-con-inteligencia-artificial-que-tiene-la-capacidad-de-reconocer-casos-de-violencia-obstetrica-y-ginecologica-normativa-y-legislacion-informate-con-el-chatbot-noticia/?ref=ecr">media</a>]</span>
+      </li>
+      <li><a href="https://github.com/alexanderquispe/DigitalPillarAI">DigitalPillarAI</a>: a GPT-4 tool that classifies World Bank Project Appraisal Documents into six pillars.</li>
+      <li><a href="https://github.com/d2cml-ai/llm4tesis">llm4tesis</a>: a GPT-4 tool that generates research questions from the PUCP Economics thesis repository.</li>
+    </ul>
+  </section>
 
-  <div class="paper" id="agentic-automation">
-    <a class="paper-title" href="{{ '/files/quispe_agentic_automation_stages_2026.pdf' | relative_url }}">A Unified Economic Model of Agentic Coding Automation</a>
-    <div class="authors"><strong>Alexander Quispe</strong> &middot; 2026 &middot; <a href="{{ '/files/quispe_agentic_automation_stages_2026.pdf' | relative_url }}">draft</a></div>
-    <p class="summary">How many coding agents can an organization run? The tightest of verification, isolation, and demand constraints sets the scale, and the practitioners' five maturity stages correspond to which one binds.</p>
-  </div>
+  <!-- Column 3: news, teaching, team -->
+  <section class="col" id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li>
+        <span class="date">Oct 2026</span>
+        Presented a poster on <a href="#language-frontier">Agentic Delegation and the Language Frontier</a>
+        at <a href="https://hai.stanford.edu/events/empirical-methods-in-the-age-of-ai">Empirical Methods in the Age of AI</a>, Stanford.
+      </li>
+      <li>
+        <span class="date">Jul 2026</span>
+        Presented <a href="#language-frontier">Agentic Delegation and the Language Frontier</a> at the
+        <a href="https://aiinstitute.hbs.edu/events/open-and-user-innovation-conference-2026/">Open and User Innovation Conference 2026</a>, Harvard Business School.
+      </li>
+      <li>
+        <span class="date">Jul 2026</span>
+        Selected for Anthropic's Claude for Open Source Program.
+      </li>
+      <li>
+        <span class="date">Jul 2026</span>
+        Three new drafts on agentic AI and software work: <a href="#renting-intelligence">Renting Intelligence</a>,
+        <a href="#industry-composition">Industry Composition</a>, and
+        <a href="#agentic-automation">A Unified Model of Agentic Coding Automation</a>.
+      </li>
+      <li>
+        <span class="date">May 2026</span>
+        <a href="https://arxiv.org/abs/2605.25438">Agentic Delegation and the Language Frontier of Software Developers</a> is on arXiv.
+      </li>
+      <li>
+        <span class="date">Sep 2025</span>
+        Started my Ph.D. in Computing and Mathematical Sciences at Caltech.
+      </li>
+    </ul>
 
-  <div class="paper" id="chatgpt-github">
-    <a class="paper-title" href="https://arxiv.org/abs/2406.11046">Impact of the Availability of ChatGPT on Software Development: A Synthetic Difference in Differences Estimation using GitHub Data</a>
-    <div class="authors"><strong>Alexander Quispe</strong>, Rodrigo Grijalba &middot; 2023 &middot; <a href="https://arxiv.org/pdf/2406.11046">arXiv</a></div>
-    <p class="summary">Using government bans of ChatGPT as natural experiments, we find that access raised git pushes, repositories, and developers per capita on GitHub.</p>
-  </div>
+    <h2 id="teaching">Teaching</h2>
+    <ul class="items">
+      <li>
+        <strong>Causal Inference and Machine Learning</strong><br />
+        Graduate course, Universidad del Pacífico, 2024
+        <span class="links">[<a href="https://github.com/alexanderquispe/CausalAI-Course">GitHub</a>][<a href="{{ '/teaching/teach3.html' | relative_url }}">students</a>]</span><br />
+        Graduate course, Department of Economics, PUCP, 2021
+        <span class="links">[<a href="https://github.com/alexanderquispe/ECO224">GitHub</a>][<a href="{{ '/teaching/teach1.html' | relative_url }}">students</a>]</span>
+      </li>
+      <li>
+        <strong>Python Intensive Course</strong><br />
+        Graduate course, Laboratory of Artificial Intelligence and Computational Methods in Social Sciences, PUCP, 2021
+        <span class="links">[<a href="https://github.com/alexanderquispe/Diplomado_PUCP">GitHub</a>][<a href="{{ '/teaching/teach2.html' | relative_url }}">students</a>]</span>
+      </li>
+      <li>
+        <strong>Python Bootcamp</strong><br />
+        The Code Blinders, 2021
+        <span class="links">[<a href="https://github.com/antonioalt23/The_Code_Blinders">GitHub</a>]</span>
+      </li>
+    </ul>
 
-  <h3>Earlier work</h3>
-  <ul class="plain-list">
-    <li>
-      <strong>Can Market Competition Reduce Public Sector Corruption?</strong><br />
-      Muhammad Haseeb, Amen Jalal, <strong>Alexander Quispe</strong>, Kate Vyborny &middot; 2023 &middot; <span class="muted">draft available on request</span>
-    </li>
-    <li>
-      <a href="{{ '/files/hdm.pdf' | relative_url }}"><strong>High Dimensional Metrics in Julia</strong></a><br />
-      <strong>Alexander Quispe</strong>, Victor Chernozhukov, Christian Hansen, Martin Spindler &middot; 2022
-    </li>
-    <li>
-      <a href="{{ '/files/Alexander_Quispe_Thesis.pdf' | relative_url }}"><strong>Fertility and Education Patterns Across Different Phases of Development</strong></a><br />
-      <strong>Alexander Quispe</strong> &middot; 2020
-    </li>
-  </ul>
-</section>
-
-<section id="software">
-  <h2>Software</h2>
-  <h3>Causal ML packages</h3>
-  <ul class="plain-list">
-    <li><a href="https://github.com/d2cml-ai/csdid">csdid</a>: average treatment effect parameters in Difference-in-Differences, including doubly robust estimation.</li>
-    <li><a href="https://github.com/d2cml-ai/DRDIDpy">DRDIDpy</a>: estimators for the ATT in DiD when parallel trends hold after conditioning on pre-treatment covariates.</li>
-    <li><a href="https://github.com/CausalML/TreatmentEffectRisk.py">TreatmentEffectRisk</a>: bounds and inference for treatment effect risk.</li>
-    <li><a href="https://github.com/d2cml-ai/synthdid.py/">synthdid.py</a>, <a href="https://github.com/d2cml-ai/Synthdid.jl">synthdid.jl</a>: Python and Julia implementations of Synthetic Difference-in-Differences (Arkhangelsky et al., 2021).</li>
-    <li><a href="https://github.com/d2cml-ai/HDMjl.jl">HDMjl</a>: estimation methods for high-dimensional models in Julia (Chernozhukov et al., 2016).</li>
-    <li><a href="https://github.com/d2cml-ai/Sensemakr.jl">Sensemakr.jl</a>: sensitivity analysis tools in Julia (Cinelli et al., 2020).</li>
-  </ul>
-
-  <h3>Books and teaching resources</h3>
-  <ul class="plain-list">
-    <li>
-      <strong>Inference on Causal and Structural Parameters using ML and AI</strong>, used in course 14.388 at MIT &middot;
-      <a href="https://d2cml-ai.github.io/14.388_r">R</a> /
-      <a href="https://d2cml-ai.github.io/14.388_py">Python</a> /
-      <a href="https://d2cml-ai.github.io/14.388_jl">Julia</a>
-    </li>
-    <li>
-      <strong>Machine Learning and Causal Inference</strong>, used in course MGTECON 634 at Stanford &middot;
-      <a href="https://d2cml-ai.github.io/mgtecon634_r">R</a> /
-      <a href="https://d2cml-ai.github.io/mgtecon634_py/">Python</a>
-    </li>
-  </ul>
-
-  <h3>AI projects</h3>
-  <ul class="plain-list">
-    <li>
-      <a href="https://github.com/RodrigoGrijalba/vog-chatbot">ILLA</a>: an AI assistant that helps identify potential obstetric and gynecological violence
-      (<a href="https://elcomercio.pe/ecdata/cesareas-en-peru-comercio-creo-a-illa-una-herramienta-y-asistente-virtual-entrenada-con-inteligencia-artificial-que-tiene-la-capacidad-de-reconocer-casos-de-violencia-obstetrica-y-ginecologica-normativa-y-legislacion-informate-con-el-chatbot-noticia/?ref=ecr">in the media</a>).
-    </li>
-    <li><a href="https://github.com/alexanderquispe/DigitalPillarAI">DigitalPillarAI</a>: a GPT-4 tool that classifies World Bank Project Appraisal Documents into six pillars.</li>
-    <li><a href="https://github.com/d2cml-ai/llm4tesis">llm4tesis</a>: a GPT-4 tool that generates research questions from the PUCP Economics thesis repository.</li>
-  </ul>
-</section>
-
-<section id="teaching">
-  <h2>Teaching</h2>
-  <ul class="plain-list">
-    <li>
-      <strong>Causal Inference and Machine Learning</strong><br />
-      Graduate course, Universidad del Pacífico, 2024 &middot;
-      <a href="https://github.com/alexanderquispe/CausalAI-Course">GitHub</a> /
-      <a href="{{ '/teaching/teach3.html' | relative_url }}">students</a><br />
-      Graduate course, Department of Economics, PUCP, 2021 &middot;
-      <a href="https://github.com/alexanderquispe/ECO224">GitHub</a> /
-      <a href="{{ '/teaching/teach1.html' | relative_url }}">students</a>
-    </li>
-    <li>
-      <strong>Python Intensive Course</strong><br />
-      Graduate course, Laboratory of Artificial Intelligence and Computational Methods in Social Sciences, PUCP, 2021 &middot;
-      <a href="https://github.com/alexanderquispe/Diplomado_PUCP">GitHub</a> /
-      <a href="{{ '/teaching/teach2.html' | relative_url }}">students</a>
-    </li>
-    <li>
-      <strong>Python Bootcamp</strong><br />
-      The Code Blinders, 2021 &middot;
-      <a href="https://github.com/antonioalt23/The_Code_Blinders">GitHub</a>
-    </li>
-  </ul>
-</section>
-
-<section id="team">
-  <h2>Research Team</h2>
-  <p>
-    <strong>Current research assistant:</strong>
-    <a href="https://karljaap.github.io/">Karl Janampa</a>
-  </p>
-  <p>
-    <strong>Alumni:</strong>
-    <a href="https://github.com/RodrigoGrijalba">Rodrigo Grijalba</a> (Predoc, Princeton),
-    <a href="https://jhonkevinfr.netlify.app/">Jhon Flores</a> (LSE),
-    <a href="https://valbarracing.github.io/Portfolio2/">Valeria Albarracin</a>,
-    <a href="https://francocv6.github.io/portafolio/">Franco Cáceres</a>,
-    <a href="https://sandramartinezgutierrez.github.io/">Sandra Martinez</a> (Columbia),
-    <a href="https://github.com/Robertopucp">Roberto Mendoza</a> (Predoc, Princeton),
-    <a href="https://anzonyquispe.github.io/">Anzoni Quispe</a> (Predoc, Princeton),
-    <a href="https://yosephayala.netlify.app/">Yoseph Ayala</a> (RA, Columbia),
-    <a href="https://ecirilomendoza.github.io/">Elibeth Cirilo</a> (University of Warwick),
-    <a href="https://jesoto.github.io/portafolio/">Jesus Soto</a> (Data Scientist, Interbank)
-  </p>
-</section>
+    <h2 id="team">Research Team</h2>
+    <p>
+      <strong>Current research assistant:</strong>
+      <a href="https://karljaap.github.io/">Karl Janampa</a>
+    </p>
+    <p>
+      <strong>Alumni:</strong>
+      <a href="https://github.com/RodrigoGrijalba">Rodrigo Grijalba</a> (Predoc, Princeton),
+      <a href="https://jhonkevinfr.netlify.app/">Jhon Flores</a> (LSE),
+      <a href="https://valbarracing.github.io/Portfolio2/">Valeria Albarracin</a>,
+      <a href="https://francocv6.github.io/portafolio/">Franco Cáceres</a>,
+      <a href="https://sandramartinezgutierrez.github.io/">Sandra Martinez</a> (Columbia),
+      <a href="https://github.com/Robertopucp">Roberto Mendoza</a> (Predoc, Princeton),
+      <a href="https://anzonyquispe.github.io/">Anzoni Quispe</a> (Predoc, Princeton),
+      <a href="https://yosephayala.netlify.app/">Yoseph Ayala</a> (RA, Columbia),
+      <a href="https://ecirilomendoza.github.io/">Elibeth Cirilo</a> (University of Warwick),
+      <a href="https://jesoto.github.io/portafolio/">Jesus Soto</a> (Data Scientist, Interbank)
+    </p>
+  </section>
+</div>
