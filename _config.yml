@@ -1,0 +1,57 @@
+# Site settings — built by GitHub Pages (Jekyll) from the `ss` branch.
+title: Alexander Quispe
+tagline: Ph.D. Student at Caltech
+description: >-
+  Alexander Quispe - Ph.D. student in Computing and Mathematical Sciences at Caltech.
+  Research on the economics of AI, causal machine learning, and econometrics.
+url: https://alexanderquispe.github.io
+baseurl: ""
+author: Alexander Quispe
+lang: en_US
+
+social:
+  name: Alexander Quispe
+  links:
+    - https://github.com/alexanderquispe
+    - https://www.linkedin.com/in/alexander-quispe-37ab42173
+
+twitter:
+  card: summary
+
+# Blog posts live in _posts/ as YYYY-MM-DD-title.md
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: blog/feed.xml
+
+# giscus comments (GitHub Discussions of this repo, "Announcements" category)
+giscus:
+  repo: alexanderquispe/alexanderquispe.github.io
+  repo_id: MDEwOlJlcG9zaXRvcnkzODIzOTAzNTI=
+  category: Announcements
+  category_id: DIC_kwDOFsrQUM4DKwnH
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/alex_foto.jpg
+  - scope:
+      type: posts
+    values:
+      layout: post
+      comments: true
+
+exclude:
+  - README.md
+  - .gitignore

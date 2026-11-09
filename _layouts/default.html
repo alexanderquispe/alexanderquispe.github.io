@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Alexander Quispe, Caltech, Economics of AI, Agentic AI, Causal Machine Learning, Econometrics, Difference-in-Differences, csdid, synthdid" />
+    {% seo %}
+    {% feed_meta %}
+    <link rel="icon" type="image/svg+xml" href="{{ '/img/favicon.svg' | relative_url }}" />
+    <link rel="apple-touch-icon" href="{{ '/img/alex_foto.jpg' | relative_url }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <a class="site-name" href="{{ '/' | relative_url }}">Alexander Quispe</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="{{ '/#research' | relative_url }}">Research</a>
+          <a href="{{ '/#software' | relative_url }}">Software</a>
+          <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
+          <a href="{{ '/#teaching' | relative_url }}">Teaching</a>
+          <a href="{{ '/files/Alexander_Quispe_CV_2026.pdf' | relative_url }}">CV</a>
+        </nav>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          &copy; {{ site.time | date: '%Y' }} Alexander Quispe &middot;
+          <a href="mailto:aquisper@caltech.edu">aquisper@caltech.edu</a> &middot;
+          <a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

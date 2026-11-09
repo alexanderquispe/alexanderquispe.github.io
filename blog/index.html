@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+description: Notes by Alexander Quispe on AI, economics, and causal machine learning.
+---
+<h1 class="page-title">Blog</h1>
+<p class="lede">
+  Notes on AI, economics, and causal machine learning.
+  Follow along via <a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a>.
+</p>
+
+{% if site.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | truncatewords: 40 }}{% endif %}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty">The first post is on its way.</p>
+{% endif %}
