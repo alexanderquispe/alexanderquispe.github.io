@@ -1,0 +1,23 @@
+{%- comment -%} Grid of people: include.people is a list of {name, role, img, github, url} {%- endcomment -%}
+<ul class="people">
+  {%- for p in include.people %}
+  {%- assign parts = p.name | split: ' ' %}
+  <li class="person">
+    <div class="avatar" aria-hidden="true">
+      <span>{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+      {%- if p.img %}
+      <img src="{% if p.img contains '://' %}{{ p.img }}{% else %}{{ p.img | relative_url }}{% endif %}" alt="" loading="lazy" onerror="this.remove()" />
+      {%- endif %}
+    </div>
+    <div class="person-name">{{ p.name }}</div>
+    {%- if p.role and p.role != "" %}
+    <div class="person-role">{{ p.role }}</div>
+    {%- endif %}
+    <div class="person-links">
+      {%- if p.github %}<a href="{{ p.github }}">GitHub</a>{% endif %}
+      {%- if p.github and p.url %} &middot; {% endif %}
+      {%- if p.url %}<a href="{{ p.url }}">Website</a>{% endif -%}
+    </div>
+  </li>
+  {%- endfor %}
+</ul>

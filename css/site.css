@@ -421,6 +421,72 @@ mjx-container[display="true"] {
   margin-top: 24px;
 }
 
+/* ---------- teaching: student pages ---------- */
+
+.back {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.people-heading {
+  margin: 40px 0 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.people {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+  gap: 28px 18px;
+}
+
+.person {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.avatar {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: var(--code-bg);
+  color: var(--muted);
+  font-size: 30px;
+  letter-spacing: 0.02em;
+}
+
+.avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.person-name {
+  font-weight: 500;
+}
+
+.person-role {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.person-links {
+  margin-top: 4px;
+  font-size: 14.5px;
+}
+
 /* ---------- syntax highlighting (rouge) ---------- */
 
 .highlight .c, .highlight .c1, .highlight .cm, .highlight .cs { color: var(--muted); font-style: italic; }

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="Alexander Quispe, Caltech, Economics of AI, Agentic AI, Causal Machine Learning, Econometrics, Difference-in-Differences, csdid, synthdid" />
+    {% if page.noindex %}<meta name="robots" content="noindex" />{% endif %}
     {% seo %}
     {% feed_meta %}
     <link rel="icon" type="image/svg+xml" href="{{ '/img/favicon.svg' | relative_url }}" />
@@ -22,7 +23,7 @@
           <a href="{{ '/#software' | relative_url }}">Software</a>
           <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
           <a href="{{ '/#teaching' | relative_url }}">Teaching</a>
-          <a href="{{ '/files/Alexander_Quispe_CV_2026.pdf' | relative_url }}">CV</a>
+          <a href="{{ '/cv.pdf' | relative_url }}">CV</a>
         </nav>
       </header>
 

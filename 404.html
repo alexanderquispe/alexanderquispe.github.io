@@ -1,0 +1,17 @@
+---
+layout: default
+title: Page not found
+permalink: /404.html
+sitemap: false
+noindex: true
+---
+<script>
+  // Old CV links (e.g. /files/Alexander_Quispe_CV_2026.pdf) go to the current CV.
+  if (/cv[^/]*\.pdf$/i.test(location.pathname)) location.replace("{{ '/cv.pdf' | relative_url }}");
+</script>
+<h1 class="page-title">Page not found</h1>
+<p class="lede">
+  That page doesn't exist (anymore). You might be looking for the
+  <a href="{{ '/' | relative_url }}">homepage</a>, my <a href="{{ '/cv.pdf' | relative_url }}">CV</a>,
+  or the <a href="{{ '/blog/' | relative_url }}">blog</a>.
+</p>

@@ -6,19 +6,25 @@ description: >-
   Research on the economics of AI, causal machine learning, and econometrics.
 url: https://alexanderquispe.github.io
 baseurl: ""
-author: Alexander Quispe
+author:
+  name: Alexander Quispe
+  twitter: Alex_QR_CG
 lang: en_US
 
+# Used by jekyll-seo-tag for the JSON-LD "sameAs" profile links.
 social:
   name: Alexander Quispe
   links:
+    - https://scholar.google.com/citations?user=iUKWQDcAAAAJ
     - https://github.com/alexanderquispe
+    - https://x.com/Alex_QR_CG
     - https://www.linkedin.com/in/alexander-quispe-37ab42173
 
 twitter:
+  username: Alex_QR_CG
   card: summary
 
-# Blog posts live in _posts/ as YYYY-MM-DD-title.md
+# Blog posts live in _posts/ as YYYY-MM-DD-title.md (drafts in _drafts/)
 permalink: /blog/:year/:month/:day/:title/
 
 markdown: kramdown
@@ -30,6 +36,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 feed:
   path: blog/feed.xml
@@ -51,6 +58,11 @@ defaults:
     values:
       layout: post
       comments: true
+  # Keep the Search Console verification file out of the sitemap
+  - scope:
+      path: googled8829529be240c6b.html
+    values:
+      sitemap: false
 
 exclude:
   - README.md

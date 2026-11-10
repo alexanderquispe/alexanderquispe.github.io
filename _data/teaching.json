@@ -1,0 +1,480 @@
+{
+  "causalai_up": {
+    "tas": [
+      {
+        "name": "Jhon K. Flores Rojas",
+        "role": "Research Assistant",
+        "img": "https://avatars.githubusercontent.com/u/48776907?v=4",
+        "github": "https://github.com/tjhon",
+        "url": "https://jhonkevinfr.netlify.app/"
+      },
+      {
+        "name": "Rodrigo Grijalba",
+        "role": "BSc in Economics from the PUCP",
+        "img": "https://rodrigogrijalba.github.io/images/profile.png",
+        "github": "https://github.com/RodrigoGrijalba",
+        "url": "https://rodrigogrijalba.github.io"
+      }
+    ],
+    "students": [
+      {
+        "name": "Alvaro Yllu",
+        "role": "Undergraduate Economist",
+        "img": "https://aayllus.github.io/assets/img/profile-img.jpg",
+        "github": "https://github.com/AAYlluS",
+        "url": "https://aayllus.github.io/"
+      },
+      {
+        "name": "Valeria Hoyos",
+        "role": "Research Assistant",
+        "img": "https://valeriahoyosm.github.io/Valeria_HM_cv/assets/img/avatar.png",
+        "github": "https://github.com/valeriahoyosm",
+        "url": "https://valeriahoyosm.github.io/Valeria_HM_cv/"
+      },
+      {
+        "name": "Josue Maguiña",
+        "role": "Undergraduate Economist",
+        "img": "https://edu01062.github.io/Josue-Maguina_CV/assets/img/profile-img.jpg",
+        "github": "https://github.com/Edu01062",
+        "url": "https://edu01062.github.io/Josue-Maguina_CV/"
+      },
+      {
+        "name": "Maria Cubas",
+        "role": "Economics student",
+        "img": "https://pamelacubas.github.io/Portafolio/images/perfil1.png",
+        "github": "https://github.com/pamelacubas",
+        "url": "https://pamelacubas.github.io/Portafolio/"
+      },
+      {
+        "name": "Janice Mamani",
+        "role": "Economics student",
+        "img": "https://janicedmp.github.io/Portafolio_cv/assets/img/janicemamani.jpg",
+        "github": "https://github.com/JaniceDMP",
+        "url": "https://janicedmp.github.io/Portafolio_cv/"
+      },
+      {
+        "name": "Matias Villalba",
+        "role": "Research Assistant",
+        "img": "https://github.com/mvillalbao.png?size=240",
+        "github": "https://github.com/mvillalbao",
+        "url": "https://mvillalbao.github.io"
+      },
+      {
+        "name": "Valerie Dube",
+        "role": "BSc in Economics",
+        "img": "https://vedube.github.io/images/profile.png",
+        "github": "https://github.com/vedube",
+        "url": "https://vedube.github.io"
+      },
+      {
+        "name": "Juan Guerrero",
+        "role": "Undergraduate student in economics",
+        "img": "https://github.com/juanguerrerocu/web-site/blob/main/Laura/assets/img/me.jpg?raw=true",
+        "github": "https://github.com/juanguerrerocu",
+        "url": "https://github.com/juanguerrerocu/web-site.git"
+      },
+      {
+        "name": "Erzo Garay",
+        "role": "Economics student",
+        "img": "https://erzof.github.io/Presentacion/assets/img/Phot.jpg",
+        "github": "https://github.com/ErzoF",
+        "url": "https://erzof.github.io/Presentacion/"
+      },
+      {
+        "name": "Gerardo Horna",
+        "role": "Applied Economist",
+        "img": "https://blacky1412.github.io/Alejandro_Horna_CV/assets/img/Foto.jpg",
+        "github": "https://github.com/blacky1412",
+        "url": "https://blacky1412.github.io/Alejandro_Horna_CV/"
+      },
+      {
+        "name": "Fernando Acosta",
+        "role": "Economics student",
+        "img": "https://fernandoacosta2002.github.io/CV/assets/img/profile-img.jpg",
+        "github": "https://github.com/FernandoAcosta2002",
+        "url": "https://fernandoacosta2002.github.io/CV/"
+      },
+      {
+        "name": "Alberto Trelles",
+        "role": "B.S. Economics Candidate",
+        "img": "https://albertotrelles.github.io/assets/img/unnamed.jpg",
+        "github": "https://github.com/albertotrelles",
+        "url": "https://albertotrelles.github.io/"
+      },
+      {
+        "name": "Jeffry Bedia",
+        "role": "Economics Bachelor",
+        "img": "https://github.com/Jeffrybw.png?size=240",
+        "github": "https://github.com/Jeffrybw",
+        "url": "https://jeffrybw.github.io/portafolio/"
+      },
+      {
+        "name": "Angie Olarte",
+        "role": "Student of Economics",
+        "img": "https://angieolarteg.github.io/CV/assets/img/Angie.jpg",
+        "github": "https://github.com/AngieOlarteG",
+        "url": "https://angieolarteg.github.io/CV/"
+      },
+      {
+        "name": "Veronika Martel",
+        "role": "Economics student",
+        "img": "https://raw.githubusercontent.com/fernandaamartel/resume_fm/main/assets/img/me-main.jpg",
+        "github": "https://github.com/fernandaamartel",
+        "url": "https://fernandaamartel.github.io/resume_fm/"
+      },
+      {
+        "name": "Frank Alvarado",
+        "role": "Economics student",
+        "img": "https://frank07-10.github.io/Portafolio/assets/images/me1.jpg",
+        "github": "https://github.com/frank07-10",
+        "url": "https://frank07-10.github.io/Portafolio/about.html"
+      },
+      {
+        "name": "Andrea Romero",
+        "role": "Economics student",
+        "img": "https://andrearomperez.github.io/portfolio/assets/img/andrea_2.jpg",
+        "github": "https://github.com/andrearomperez",
+        "url": "https://andrearomperez.github.io/portfolio/"
+      },
+      {
+        "name": "Nicolas Trujillo",
+        "role": "Economics Student & Real Estate Financial Planning Intern",
+        "img": "https://nictrujillo-meow.github.io/assets/img/profile-img.jpg",
+        "github": "https://github.com/NicTrujillo-meow",
+        "url": "https://nictrujillo-meow.github.io/"
+      },
+      {
+        "name": "Francisco Arizola",
+        "role": "Economics undergraduate",
+        "img": "https://franciscoari.github.io/Francisco_Arizola_CV/assets/img/Foto_perfil_FA.jpg",
+        "github": "https://github.com/FranciscoAri",
+        "url": "https://franciscoari.github.io/Francisco_Arizola_CV/"
+      }
+    ]
+  },
+  "causalai_pucp": {
+    "tas": [
+      {
+        "name": "Elibeth Cirilo",
+        "role": "Economics student",
+        "img": "/img/teaching1/eli.jpg",
+        "github": "https://github.com/ecirilomendoza",
+        "url": "https://ecirilomendoza.github.io/"
+      },
+      {
+        "name": "Roberto Mendoza",
+        "role": "Economics student",
+        "img": "/img/teaching1/roberto.jpg",
+        "github": "https://github.com/Robertopucp",
+        "url": "https://robertopucp.github.io/robert.github.io/"
+      }
+    ],
+    "students": [
+      {
+        "name": "Claudia Vivas Alejandro",
+        "role": "Economics student",
+        "img": "/img/teaching1/claudia.jpg",
+        "github": "https://github.com/claudiavivas",
+        "url": "https://claudiavivas.github.io/"
+      },
+      {
+        "name": "Stephy Riega Escalante",
+        "role": "Economics student",
+        "img": "/img/teaching1/stephy.jpg",
+        "github": "https://github.com/stephyriega",
+        "url": "https://stephyriega.github.io/"
+      },
+      {
+        "name": "Jesús Soto Enriquez",
+        "role": "Economics student",
+        "img": "/img/teaching1/jesus.jpg",
+        "github": "https://github.com/jesoto",
+        "url": "https://jesoto.github.io/portafolio/"
+      },
+      {
+        "name": "Carlos González Avila",
+        "role": "Economics student",
+        "img": "/img/teaching1/carlos.jpg",
+        "github": "https://github.com/carlosgonzalez26",
+        "url": "https://carlosgonzalez26.github.io/"
+      },
+      {
+        "name": "Franco Caceres Vasquez",
+        "role": "Economics student",
+        "img": "/img/teaching1/franco.jpg",
+        "github": "https://github.com/francocv6",
+        "url": "https://francocv6.github.io/portafolio/"
+      },
+      {
+        "name": "Sandra Martínez Gutiérrez",
+        "role": "Economics student",
+        "img": "/img/teaching1/sandra.jpg",
+        "github": "https://github.com/SandraMartinezGutierrez",
+        "url": "https://sandramartinezgutierrez.github.io/"
+      },
+      {
+        "name": "Sonia Asto Mercado",
+        "role": "Economics student",
+        "img": "/img/teaching1/sonia.jpg",
+        "github": "https://github.com/rosmeryasto",
+        "url": "https://rosmeryasto.github.io/"
+      },
+      {
+        "name": "Gianfranco Soria Alosilla",
+        "role": "Economics student",
+        "img": "/img/teaching1/gianfranco.jpg",
+        "github": "https://github.com/GianfrancoSoria",
+        "url": "https://gianfrancosoria.github.io/"
+      },
+      {
+        "name": "Rodrigo Silupú",
+        "role": "Economics student",
+        "img": "/img/teaching1/rodrigo.jpg",
+        "github": "https://github.com/rodrigosilupu",
+        "url": "https://rodrigosilupu.github.io/"
+      },
+      {
+        "name": "Marcio Tapia",
+        "role": "Economics student",
+        "img": "/img/teaching1/marcio.jpg",
+        "github": "https://github.com/Andre2021-est",
+        "url": "https://andre2021-est.github.io/"
+      },
+      {
+        "name": "Aliro Cabrera",
+        "role": "Economics student",
+        "img": "/img/teaching1/aliro.jpg",
+        "github": "https://github.com/manuautomatic",
+        "url": "https://manuautomatic.github.io/"
+      },
+      {
+        "name": "Eljaer Eusebio",
+        "role": "Economics student",
+        "img": "/img/teaching1/eljaer.jpg",
+        "github": "https://github.com/edfrance",
+        "url": "https://edfrance.github.io/"
+      },
+      {
+        "name": "Alexander Pacheco",
+        "role": "Economics student",
+        "img": "/img/teaching1/alexanderpacheco.jpg",
+        "github": "https://github.com/alexander-pacheco",
+        "url": "https://alexander-pacheco.github.io/"
+      },
+      {
+        "name": "Erik Morales López",
+        "role": "Economics student",
+        "img": "/img/teaching1/erik.jpg",
+        "github": "https://github.com/HaloReach2552",
+        "url": "https://haloreach2552.github.io/Brando.fold.github.io/"
+      },
+      {
+        "name": "Diego Delgado",
+        "role": "Economics student",
+        "img": "/img/teaching1/diego.jpg",
+        "github": "https://github.com/DiegoDelgadoD",
+        "url": "https://diegodelgadod.github.io/"
+      },
+      {
+        "name": "Diego Alonso Gómez",
+        "role": "Economics student",
+        "img": "/img/teaching1/diegoalonso.jpg",
+        "github": "https://github.com/Diego-Alonso-544",
+        "url": "https://diego-alonso-544.github.io/"
+      },
+      {
+        "name": "Nicole Linares Camus",
+        "role": "Economics student",
+        "img": "/img/teaching1/nicole.jpg",
+        "github": "https://github.com/hintecole?tab=repositories",
+        "url": "https://hintecole.github.io/"
+      },
+      {
+        "name": "Katiuska Olivera",
+        "role": "Economics student",
+        "img": "/img/teaching1/katiuska2.jpg",
+        "github": "https://github.com/KatiuskaOlivera",
+        "url": "https://katiuskaolivera.github.io/"
+      },
+      {
+        "name": "Daniel Carrillo",
+        "role": "Economics student",
+        "img": "/img/teaching1/daniel.jpg",
+        "github": "https://github.com/deecc",
+        "url": "https://deecc.github.io/"
+      },
+      {
+        "name": "Rosemery Fernandez",
+        "role": "Economics student",
+        "img": "/img/teaching1/rosemery.jpg",
+        "github": "https://github.com/RosemeryFernandez",
+        "url": "https://rosemeryfernandez.github.io/"
+      },
+      {
+        "name": "Daniel de la Peña Brito",
+        "role": "Economics student",
+        "img": "/img/teaching1/danieldela.jpg",
+        "github": "https://github.com/daniel-dpb",
+        "url": "https://daniel-dpb.github.io/"
+      },
+      {
+        "name": "Gonzalo Quiroz",
+        "role": "Economics student",
+        "img": "/img/teaching1/gonzalo.jpg",
+        "github": "https://github.com/GonzaloQuiroz",
+        "url": "https://gonzaloquiroz.github.io/"
+      },
+      {
+        "name": "Andrea Clavo",
+        "role": "Economics student",
+        "img": "/img/teaching1/andrea.jpg",
+        "github": "https://github.com/andreab0106?tab=repositories",
+        "url": "https://andreab0106.github.io/"
+      },
+      {
+        "name": "M. Thais C. Bazán Burgos",
+        "role": "Economics student",
+        "img": "/img/teaching1/thais.jpg",
+        "github": "https://github.com/thaisbazanb",
+        "url": "https://thaisbazanb.github.io/"
+      }
+    ]
+  },
+  "python_pucp": {
+    "students": [
+      {
+        "name": "Valeria Navarro",
+        "role": "BSc of Economics from the PUCP",
+        "img": "/img/teaching2/valeria.jpg",
+        "github": "https://github.com/ValeriaNavarro26",
+        "url": "https://valerianavarro26.netlify.app/"
+      },
+      {
+        "name": "Adriana Mosqueira Carrión",
+        "role": "BSc of Economics from the PUCP",
+        "img": "/img/teaching2/adriana1.jpg",
+        "github": "https://github.com/AdrianaMosqueira",
+        "url": "https://adrianamosqueira.github.io/about.html"
+      },
+      {
+        "name": "Carlos A. Zelada",
+        "role": "Economist from the UNMSM",
+        "img": "/img/teaching2/carlos.jpg",
+        "github": "https://github.com/czeladach",
+        "url": "https://czeladach.github.io/"
+      },
+      {
+        "name": "Luciana Figueroa",
+        "role": "Senior Acquisition Strategy Analyst at Scotiabank Perú",
+        "img": "/img/teaching2/luciana.jpg",
+        "github": "https://github.com/lucianafv27",
+        "url": "https://lucianafv27.github.io/"
+      },
+      {
+        "name": "Klary Lozano",
+        "role": "Systems Engineer - Information Systems Quality Analyst",
+        "img": "/img/teaching2/klary.jpg",
+        "github": "https://github.com/klarylozanoruiz",
+        "url": "https://klarylozanoruiz.github.io/website/"
+      },
+      {
+        "name": "Yoseph Ayala",
+        "role": "RA Consultant at the University of Columbia and a Teacher at PUCP",
+        "img": "/img/teaching2/yoseph.jpg",
+        "github": "https://github.com/Yoseph10",
+        "url": "https://yosephayala.netlify.app/"
+      },
+      {
+        "name": "Rosario Ramos",
+        "role": "Graduated in Political Science from the PUCP",
+        "img": "/img/teaching2/rosario.jpg",
+        "github": "https://github.com/RRamosc",
+        "url": "https://rramosc.github.io/"
+      },
+      {
+        "name": "Chiara Zamora",
+        "role": "BSc in Political Science and Government from the PUCP",
+        "img": "/img/teaching2/chiara.jpg",
+        "github": "https://github.com/ChiaraZamoraM",
+        "url": "https://chiarazamoram.github.io/chiarazamora.github.io/"
+      },
+      {
+        "name": "Rodrigo Grijalba",
+        "role": "BSc in Economics from the PUCP",
+        "img": "/img/teaching2/rodrigo.jpg",
+        "github": "https://github.com/RodrigoGrijalba",
+        "url": "https://rodrigogrijalba.github.io/"
+      },
+      {
+        "name": "Luis Rodrigo Alamo Ramos",
+        "role": "Data Scientist at Credigob. Economist",
+        "img": "/img/teaching2/rodrigoalamo.jpg",
+        "github": "https://github.com/Rodrigo9721",
+        "url": "https://rodrigo9721.github.io/"
+      },
+      {
+        "name": "Hans Isaí Aguirre Ccerare",
+        "role": "Economics | DS for Social Sciences and Public Management",
+        "img": "/img/teaching2/hans.jpg",
+        "github": "https://github.com/hansaguirre1",
+        "url": "https://hansaguirre1.github.io/HansAguirre/"
+      },
+      {
+        "name": "Daniel Soto",
+        "role": "Master in Human Development. DS for Social Sciences and Public Management",
+        "img": "/img/teaching2/daniel.jpg",
+        "github": "https://github.com/DanielSotoHurtado",
+        "url": "https://danielsotohurtado.github.io/"
+      },
+      {
+        "name": "Jesus Gastañaduy",
+        "role": "B.A. in Psychology; CX Metrics Specialist at RIMAC Seguros",
+        "img": "/img/teaching2/jesus.jpg",
+        "github": "https://github.com/j-gastanaduy",
+        "url": "https://j-gastanaduy.github.io/"
+      },
+      {
+        "name": "Claudia Villena",
+        "role": "Graduated in Political and Government Sciences from the PUCP",
+        "img": "/img/teaching2/claudia.jpg",
+        "github": "https://github.com/ClaudiaVillena27",
+        "url": "https://focused-fermat-9b9d69.netlify.app/"
+      },
+      {
+        "name": "Juan Azula",
+        "role": "MSc in Social Sciences Research Methods of Cardiff University - United Kingdom",
+        "img": "/img/teaching2/juan.jpg",
+        "github": "https://github.com/azula89",
+        "url": "https://azula89.github.io/azulajuan/"
+      },
+      {
+        "name": "Carlos Kong",
+        "role": "BA in Social Sciences - Economics, PUCP",
+        "img": "/img/teaching2/carlos2.jpg",
+        "github": "https://github.com/cdkv",
+        "url": "https://cdkv.github.io/"
+      },
+      {
+        "name": "Luzmila Lopez",
+        "role": "BSc of Economics – UNMSM",
+        "img": "/img/teaching2/luzmila.jpg",
+        "github": "https://github.com/lopezluzmila",
+        "url": "https://lopezluzmila.github.io/"
+      },
+      {
+        "name": "Antonio Ayala Laurel",
+        "role": "Undergraduate student in Economics at the PUCP",
+        "img": "/img/teaching2/antonio.jpg",
+        "github": "https://github.com/antonio-ayala",
+        "url": "https://antonio-ayala.github.io/"
+      },
+      {
+        "name": "Raysa Díaz",
+        "role": "BSc in Sociology from PUCP",
+        "img": "/img/teaching2/raysa.jpg",
+        "github": "https://github.com/raysamariana24",
+        "url": "https://raysamariana24.netlify.app/"
+      }
+    ]
+  }
+}
